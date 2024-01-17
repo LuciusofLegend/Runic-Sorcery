@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "runic_sorcery",
+  "version": "${version}",
+
+  "name": "Runic Sorcery",
+  "description": "An immersive, fully server-side magic mod, in which you use elemental runes to create a unique magical build.",
+  "authors": [
+    "LuciusofLegend"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/runic_sorcery/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "lucius.runic_sorcery.RunicSorcery"
+    ]
+  },
+
+  "mixins": [
+    "runic_sorcery.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
